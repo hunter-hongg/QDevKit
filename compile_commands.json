@@ -1,1 +1,38 @@
-build/compile_commands.json
+[
+{
+  "directory": "/home/coding/projects/QDevKit/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/coding/projects/QDevKit/build/MyQtProject_autogen/include -I/home/coding/projects/QDevKit/include -I/home/coding/projects/QDevKit/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -O3 -DNDEBUG -std=c++23 -o CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o -c /home/coding/projects/QDevKit/build/MyQtProject_autogen/mocs_compilation.cpp",
+  "file": "/home/coding/projects/QDevKit/build/MyQtProject_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/coding/projects/QDevKit/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/coding/projects/QDevKit/build/MyQtProject_autogen/include -I/home/coding/projects/QDevKit/include -I/home/coding/projects/QDevKit/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -O3 -DNDEBUG -std=c++23 -o CMakeFiles/MyQtProject.dir/src/global.cpp.o -c /home/coding/projects/QDevKit/src/global.cpp",
+  "file": "/home/coding/projects/QDevKit/src/global.cpp",
+  "output": "CMakeFiles/MyQtProject.dir/src/global.cpp.o"
+},
+{
+  "directory": "/home/coding/projects/QDevKit/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/coding/projects/QDevKit/build/MyQtProject_autogen/include -I/home/coding/projects/QDevKit/include -I/home/coding/projects/QDevKit/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -O3 -DNDEBUG -std=c++23 -o CMakeFiles/MyQtProject.dir/src/main.cpp.o -c /home/coding/projects/QDevKit/src/main.cpp",
+  "file": "/home/coding/projects/QDevKit/src/main.cpp",
+  "output": "CMakeFiles/MyQtProject.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/coding/projects/QDevKit/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/coding/projects/QDevKit/build/MyQtProject_autogen/include -I/home/coding/projects/QDevKit/include -I/home/coding/projects/QDevKit/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -O3 -DNDEBUG -std=c++23 -o CMakeFiles/MyQtProject.dir/src/pages/main_page.cpp.o -c /home/coding/projects/QDevKit/src/pages/main_page.cpp",
+  "file": "/home/coding/projects/QDevKit/src/pages/main_page.cpp",
+  "output": "CMakeFiles/MyQtProject.dir/src/pages/main_page.cpp.o"
+},
+{
+  "directory": "/home/coding/projects/QDevKit/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/coding/projects/QDevKit/build/MyQtProject_autogen/include -I/home/coding/projects/QDevKit/include -I/home/coding/projects/QDevKit/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -O3 -DNDEBUG -std=c++23 -o CMakeFiles/MyQtProject.dir/src/router.cpp.o -c /home/coding/projects/QDevKit/src/router.cpp",
+  "file": "/home/coding/projects/QDevKit/src/router.cpp",
+  "output": "CMakeFiles/MyQtProject.dir/src/router.cpp.o"
+},
+{
+  "directory": "/home/coding/projects/QDevKit/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/coding/projects/QDevKit/build/MyQtProject_autogen/include -I/home/coding/projects/QDevKit/include -I/home/coding/projects/QDevKit/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -O3 -DNDEBUG -std=c++23 -o CMakeFiles/MyQtProject.dir/src/window.cpp.o -c /home/coding/projects/QDevKit/src/window.cpp",
+  "file": "/home/coding/projects/QDevKit/src/window.cpp",
+  "output": "CMakeFiles/MyQtProject.dir/src/window.cpp.o"
+}
+]

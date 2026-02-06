@@ -1,43 +1,23 @@
 #pragma once
 #include <QMainWindow>
 #include <QWidget>
-#include <unordered_map>
-#include <string>
 #include <functional>
+#include <string>
+#include <unordered_map>
 
-namespace util
-{
-    class Router
-    {
-    public:
-        Router() = delete;
-        Router(
-            std::unordered_map<std::string, QWidget*> route,
-            QMainWindow *MainWindow) : routes(route), window(MainWindow) {}
+namespace util {
+class Router {
+public:
+  Router() = delete;
+  Router(std::unordered_map<std::string, QWidget *>, QMainWindow *);
+  Router(
+      std::unordered_map<std::string, std::function<QWidget *(QMainWindow *)>>,
+      QMainWindow *);
+  std::unordered_map<std::string, QWidget *> GetRoutes() noexcept;
+  void Navigate(std::string route) noexcept(false);
 
-        Router(
-            std::unordered_map<std::string, std::function<QWidget*(QMainWindow*)>> route, 
-            QMainWindow *MainWindow) : window(MainWindow) {
-                for(auto &route : route) {
-                    routes.insert({route.first, route.second(window)});
-                }
-        }
-        std::unordered_map<std::string, QWidget*> GetRoutes() noexcept {
-            return routes;
-        }
-
-        void Navigate(std::string route) noexcept(false) {
-            if(routes.find(route) == routes.end()) {
-                throw std::runtime_error("Route not found");
-            }
-            if (window->centralWidget()) {
-                delete window->centralWidget();
-            }
-            window->setCentralWidget(routes[route]);
-        }
-
-    protected:
-        std::unordered_map<std::string, QWidget*> routes;
-        QMainWindow *window;
-    };
-}
+protected:
+  std::unordered_map<std::string, QWidget *> routes;
+  QMainWindow *window;
+};
+} // namespace util
