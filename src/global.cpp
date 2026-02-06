@@ -1,3 +1,4 @@
+#include "pages.h"
 #include <header.h>
     
 namespace global {
@@ -12,6 +13,7 @@ namespace global {
         static util::Router route(
             {
                 {"/", main_page},
+                {"/git", git_page},
             },
             GlobalWindow());
         return route;

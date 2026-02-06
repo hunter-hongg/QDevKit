@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(MyQtProject VERSION 1.0.0 LANGUAGES CXX)
+project(QDevKit VERSION 1.0.0 LANGUAGES CXX)
 
 # ==================== 基础配置 ====================
 # 设置C++标准

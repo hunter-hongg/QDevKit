@@ -17,7 +17,8 @@ public:
   void Navigate(std::string route) noexcept(false);
 
 protected:
-  std::unordered_map<std::string, QWidget *> routes;
+  // 存储工厂函数而不是页面实例
+  std::unordered_map<std::string, std::function<QWidget *(QMainWindow *)>> routeFactories;
   QMainWindow *window;
 };
 } // namespace util
