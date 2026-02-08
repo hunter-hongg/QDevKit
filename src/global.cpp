@@ -1,5 +1,6 @@
+#include "global.h"
+#include "logical/git.h"
 #include "pages.h"
-#include <header.h>
     
 namespace global {
     MainWindow *GlobalWindow()
@@ -18,4 +19,7 @@ namespace global {
             GlobalWindow());
         return route;
     }
+
+    std::string GlobalPath = "";
+    logical::GitHelper GlobalGit("");
 }

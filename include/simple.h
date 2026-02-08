@@ -50,6 +50,14 @@ static void title(const char *title, QWidget *centralWidget,
   layout->addWidget(titlex, 0, align);
 }
 
+static void text(const char *title, QWidget *centralWidget,
+                  QVBoxLayout *layout, int font = 20,
+                  Qt::Alignment align = Qt::AlignCenter) {
+  auto titlex = new QLabel(title, centralWidget);
+  titlex->setFont(Simple::font(font));
+  layout->addWidget(titlex, 0, align);
+}
+
 static void back(std::string route, QWidget *centralWidget,
                  QVBoxLayout *layout) {
   Simple::button("返回", [=](){

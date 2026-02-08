@@ -1,9 +1,8 @@
 #include "global.h"
 #include "simple.h"
-#include <header.h>
-#include <qapplication.h>
-#include <qlogging.h>
+#include <QFileDialog>
 #include <qnamespace.h>
+#include <QApplication>
 
 QWidget *main_page(QMainWindow *window) {
   QWidget *centralWidget = new QWidget(window);
@@ -14,7 +13,20 @@ QWidget *main_page(QMainWindow *window) {
 
   layout->addStretch();
 
-  Simple::button("打开目录", []() {}, centralWidget, layout);
+  Simple::button(
+      "打开目录",
+      []() {
+        QString folderPath = QFileDialog::getExistingDirectory(
+            nullptr, 
+            "选择文件夹", 
+            QDir::homePath(), 
+            QFileDialog::ShowDirsOnly  
+                | QFileDialog::DontResolveSymlinks 
+        );
+        global::GlobalPath = folderPath.toStdString();
+        global::GlobalGit.set_path(global::GlobalPath);
+      },
+      centralWidget, layout);
 
   Simple::button(
       "版本管理", []() { global::GlobalRouter().Navigate("/git"); },
